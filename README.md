@@ -79,3 +79,63 @@ Because the Shelly runtime environment uses an **Espruino-based JavaScript engin
 4. Paste the code into the editor and update the `CONFIG.froniusIp` to match your Fronius inverter's IP address.
 5. Save, click **Run**, and enable the "Start on boot" toggle.
 
+---
+Below is the typical output of a query of the Fronius API:
+http://192.168.0.11/solar_api/v1/GetPowerFlowRealtimeData.fcgi
+```javascript
+{
+  "Body": {
+    "Data": {
+      "Inverters": {
+        "1": {
+          "Battery_Mode": "battery full",
+          "DT": 1,
+          "E_Day": null,
+          "E_Total": 20889872.7411111,
+          "E_Year": null,
+          "P": 717.341003417969,
+          "SOC": 99
+        }
+      },
+      "SecondaryMeters": {
+
+      },
+      "Site": {
+        "BackupMode": false,
+        "BatteryStandby": false,
+        "E_Day": null,
+        "E_Total": 20889872.7411111,
+        "E_Year": null,
+        "Meter_Location": "grid",
+        "Mode": "bidirectional",
+        "P_Akku": 58.1792221069336,
+        "P_Grid": 4.1,
+        "P_Load": -721.441003417969,
+        "P_PV": 695.562927246094,
+        "rel_Autonomy": 99.4316929616454,
+        "rel_SelfConsumption": 100
+      },
+      "Smartloads": {
+        "OhmpilotEcos": {
+
+        },
+        "Ohmpilots": {
+
+        }
+      },
+      "Version": "13"
+    }
+  },
+  "Head": {
+    "RequestArguments": {
+
+    },
+    "Status": {
+      "Code": 0,
+      "Reason": "",
+      "UserMessage": ""
+    },
+    "Timestamp": "2026-05-29T16:48:48+00:00"
+  }
+}
+```
