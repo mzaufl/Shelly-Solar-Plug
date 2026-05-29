@@ -1,6 +1,6 @@
 # Solar-Controlled Power Management via Battery SOC (Shelly Native Script)
 
-An autonomous, local smart home automation that controls a Shelly Plug based on your Fronius battery storage State of Charge (SOC)—running completely natively on the Shelly device without any external dependencies.
+An autonomous, local smart home automation that controls a Shelly Plug based on your Fronius battery storage State of Charge (SOC) - running completely natively on the Shelly device without any external dependencies.
 
 This project was created for the **Smart Home Challenge 2026** under the category **"Build the Logic"**.
 
